@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply text-sm font-body;
+    @apply font-body font-normal text-base;
+  }
+  a {
+    @apply font-body text-base uppercase font-bold tracking-[5%];
   }
   h1,
   h2,
@@ -13,5 +16,17 @@
   h5,
   h6 {
     @apply font-serif;
+  }
+  .h1 {
+    @apply text-[100px] leading-none;
+  }
+  .h2 {
+    @apply text-[48px] leading-[140%];
+  }
+  .h3 {
+    @apply font-body text-[24px] font-bold leading-[40px] uppercase tracking-[10%] text-accent;
+  }
+  .lead {
+    @apply font-body font-light text-[18px] leading-[40px];
   }
 }

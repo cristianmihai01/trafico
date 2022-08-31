@@ -14,10 +14,14 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
+    "framer-motion": "^7.2.1",
     "postcss": "^8.4.16",
+    "react-icons": "^4.4.0",
+    "remove": "^0.1.5",
     "tailwindcss": "^3.1.8"
   }
 }
