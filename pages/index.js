@@ -8,20 +8,30 @@ import { heroData } from '../data.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+// import motion
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+
 const Home = ({ heroData }) => {
   // destructure hero
   const { title, image } = heroData;
   return (
     <>
       <Header />
-      <h1 className='h1' data-aos='fade-up'>
+      <motion.h1
+        initial='initial'
+        animate='animate'
+        variants={fadeIn('down')}
+        className='h1'
+      >
         {title}
-      </h1>
+      </motion.h1>
       <Image src={image} width={160} height={160} />
       <Link href='#'>Hello</Link>
       <p className='lead'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, et
-        ad architecto beatae ipsum sequi consequatur veritatis ea facere quo!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum error sit
+        optio, molestias, eum praesentium quas vitae nisi sint temporibus
+        corrupti cupiditate est?
       </p>
       <h3 className='h3'>Lorem Ipsum</h3>
       <Footer />
