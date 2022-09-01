@@ -1,10 +1,15 @@
 
 {
+  "headerData": {
+    "logoImg": "/images/header/logo.svg"
+  },
+
   "heroData": {
     "title": "Your awesome traffic permit consultant.",
     "sceneImg": "/images/hero/scene.svg",
     "boyImg": "/images/hero/boy.svg",
     "girlImg": "/images/hero/girl.svg",
-    "truckImg": "/images/hero/truck.svg"
+    "truckImg": "/images/hero/truck.svg",
+    "btnText": "Get Started"
   }
 }

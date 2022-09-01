@@ -29,4 +29,7 @@
   .lead {
     @apply font-body font-light text-[18px] leading-[40px];
   }
+  .btn {
+    @apply h-[60px] bg-accent py-[20px] px-[24px] text-white rounded-[5px] font-body uppercase tracking-[5%] text-base font-medium;
+  }
 }

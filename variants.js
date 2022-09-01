@@ -20,8 +20,8 @@ export const staggerContainer = {
   initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.8,
-      delayChildren: 0.8,
+      staggerChildren: 0.6,
+      delayChildren: 0.6,
     },
   },
 };
@@ -54,12 +54,12 @@ export const truckAnim = {
 
 export const fadeInDown = {
   initial: {
-    y: -100,
+    y: -50,
     opacity: 0,
   },
   animate: {
     y: 0,
     opacity: 1,
-    transition: { type: 'spring', duration: 3 },
+    transition: { type: 'tween', duration: 0.6 },
   },
 };
