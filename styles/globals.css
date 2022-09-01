@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-body font-normal text-base;
+    @apply font-body font-normal text-base bg-slate-200;
   }
   a {
     @apply font-body text-base uppercase font-bold tracking-[5%];
