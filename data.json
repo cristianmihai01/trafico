@@ -1,8 +1,15 @@
 
 {
   "headerData": {
-    "logoImg": "/images/header/logo.svg"
+    "logoImg": "/images/header/logo.svg",
+    "btnText": "Contact us"
   },
+
+  "navData": [
+    {"name": "About", "href": "/"},
+    {"name": "How to", "href": "/"},
+    {"name": "Faqs", "href": "/"}
+  ],
 
   "heroData": {
     "title": "Your awesome traffic permit consultant.",

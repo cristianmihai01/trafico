@@ -16,7 +16,7 @@ import {
 // import icons
 import { CgArrowLongRight } from 'react-icons/cg';
 
-const Hero = ({ headerData, heroData }) => {
+const Hero = ({ headerData, heroData, navData }) => {
   // destructure heroData
   const { title, boyImg, girlImg, truckImg, btnText } = heroData;
   return (
@@ -30,13 +30,13 @@ const Hero = ({ headerData, heroData }) => {
       >
         {/* header */}
         <motion.div variants={fadeInDown}>
-          <Header headerData={headerData} />
+          <Header headerData={headerData} navData={navData} />
         </motion.div>
 
         {/* title */}
         <motion.h1
           variants={fadeInDown}
-          className='h1 max-w-[740px] text-white pt-[8rem] mb-[60px]'
+          className='h1 max-w-[740px] text-white pt-[12rem] mb-[60px]'
         >
           {title}
         </motion.h1>
