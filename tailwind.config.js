@@ -8,6 +8,18 @@ module.exports = {
       serif: 'DM Serif Display',
       body: 'Rubik',
     },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        lg: '0',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1120px',
+    },
     extend: {
       colors: {
         page: '#FEF8F5',
@@ -22,7 +34,7 @@ module.exports = {
         tertiary: '0 20px 40px rgba(32, 56, 100, 0.3);',
       },
       backgroundImage: {
-        hero: "url('/images/hero/scene.png')",
+        hero: "url('/images/hero/scene.svg')",
       },
     },
   },

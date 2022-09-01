@@ -11,9 +11,9 @@ import { heroData } from '../data.json';
 const Home = ({ heroData }) => {
   return (
     <div className='overflow-hidden max-w-[1600px] mx-auto bg-page'>
-      <Header />
       <Hero heroData={heroData} />
       <Footer />
+      <div className='h-[3000px]'></div>
     </div>
   );
 };
