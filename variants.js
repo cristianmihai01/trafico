@@ -60,6 +60,6 @@ export const fadeInDown = {
   animate: {
     y: 0,
     opacity: 1,
-    transition: { type: 'tween', duration: 0.6 },
+    transition: { type: 'tween', duration: 1 },
   },
 };
