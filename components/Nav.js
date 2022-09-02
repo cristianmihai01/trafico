@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { linkHover } from '../variants';
+
 const Nav = ({ navData }) => {
   return (
     <nav className='flex items-center'>
@@ -10,7 +15,14 @@ const Nav = ({ navData }) => {
           return (
             <li key={idx}>
               <Link href={href}>
-                <a className='text-white hover:text-accent'>{name}</a>
+                <motion.a
+                  variants={linkHover}
+                  initial='initial'
+                  whileHover='hover'
+                  className='cursor-pointer'
+                >
+                  {name}
+                </motion.a>
               </Link>
             </li>
           );

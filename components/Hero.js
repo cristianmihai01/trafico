@@ -5,6 +5,7 @@ import Header from './Header';
 
 // import motion
 import { motion } from 'framer-motion';
+
 // import variants
 import {
   staggerContainer,
@@ -13,6 +14,7 @@ import {
   truckAnim,
   fadeInDown,
 } from '../variants';
+
 // import icons
 import { CgArrowLongRight } from 'react-icons/cg';
 
@@ -44,7 +46,7 @@ const Hero = ({ headerData, heroData, navData }) => {
         {/* button */}
         <motion.button
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
           }}
           variants={fadeInDown}
           className='btn flex items-center gap-6'

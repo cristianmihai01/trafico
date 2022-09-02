@@ -46,18 +46,12 @@ export const fadeInDown = {
   },
 };
 
-export const btnAnim = {
+export const linkHover = {
   initial: {
-    scale: 1,
-    backgroundColor: '#EE4D47',
+    color: '#fff',
   },
   hover: {
-    backgroundColor: '#DA423D',
-    scale: 1.05,
-    transition: {
-      // ease: [0.075, 0.82, 0.165, 1],
-      type: 'spring',
-      duration: 0.3,
-    },
+    color: '#DA423D',
+    type: 'tween',
   },
 };
