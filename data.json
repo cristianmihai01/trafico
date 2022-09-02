@@ -1,4 +1,3 @@
-
 {
   "headerData": {
     "logoImgV1": "/images/header/logoV1.svg",
@@ -7,9 +6,9 @@
   },
 
   "navData": [
-    {"name": "About", "href": "/"},
-    {"name": "How to", "href": "/"},
-    {"name": "Faqs", "href": "/"}
+    { "name": "About", "href": "/" },
+    { "name": "How to", "href": "/" },
+    { "name": "Faqs", "href": "/" }
   ],
 
   "heroData": {
@@ -19,5 +18,27 @@
     "girlImg": "/images/hero/girl.svg",
     "truckImg": "/images/hero/truck.svg",
     "btnText": "Get Started"
+  },
+
+  "faqData": {
+    "pretitle": "faq",
+    "title": "Questions and Answers on Professional Traffic Permits:",
+    "accordions": [
+      {
+        "id": "1",
+        "title": "What is a professional traffic permit?",
+        "subtitle": "Traffic permits are a requirement for conducting professional traffic."
+      },
+      {
+        "id": "2",
+        "title": "What is a professional traffic permit?",
+        "subtitle": "Traffic permits are a requirement for conducting professional traffic."
+      },
+      {
+        "id": "3",
+        "title": "What is a professional traffic permit?",
+        "subtitle": "Traffic permits are a requirement for conducting professional traffic."
+      }
+    ]
   }
 }

@@ -59,7 +59,7 @@ const Header = ({ headerData, navData }) => {
       <div
         className={`${
           navMobile ? 'max-h-[154px]' : 'max-h-0'
-        } lg:hidden absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden transition-all`}
+        } lg:hidden absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden shadow-2xl  transition-all`}
       >
         <NavMobile navData={navData} />
       </div>

@@ -22,7 +22,7 @@ const Hero = ({ headerData, heroData, navData }) => {
   // destructure heroData
   const { title, boyImg, girlImg, truckImg, btnText } = heroData;
   return (
-    <section className='bg-hero bg-no-repeat bg-left-top min-h-[950px]'>
+    <section className='bg-hero bg-no-repeat bg-left-top min-h-[950px] lg:mb-80'>
       {/* container */}
       <motion.div
         variants={staggerContainer}

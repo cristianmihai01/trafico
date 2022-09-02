@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NavMobile = ({ navData }) => {
   return (
-    <nav className='bg-green-400 w-full p-4'>
+    <nav className='bg-accent w-full p-4'>
       {/* nav list */}
       <ul className='flex flex-col gap-y-6'>
         {navData.map((item, idx) => {
