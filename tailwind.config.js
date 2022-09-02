@@ -24,7 +24,10 @@ module.exports = {
       colors: {
         page: '#FEF8F5',
         primary: '#402B2B',
-        accent: '#EE4D47',
+        accent: {
+          DEFAULT: '#EE4D47',
+          hover: '#DA423D',
+        },
         tint: '#FDEDE8',
         darkblue: '#0F264C',
       },

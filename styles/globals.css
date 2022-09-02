@@ -18,7 +18,7 @@
     @apply font-serif;
   }
   .h1 {
-    @apply text-[100px] leading-none;
+    @apply text-[68px] lg:text-[100px] leading-none;
   }
   .h2 {
     @apply text-[48px] leading-[140%];
@@ -30,6 +30,6 @@
     @apply font-body font-light text-[18px] leading-[40px];
   }
   .btn {
-    @apply h-[60px] bg-accent py-[20px] px-[24px] text-white rounded-[5px] font-body uppercase tracking-[5%] text-base font-medium;
+    @apply h-[60px] bg-accent py-[20px] px-[24px] text-white rounded-[5px] font-body uppercase tracking-[5%] text-base font-medium hover:bg-accent-hover;
   }
 }

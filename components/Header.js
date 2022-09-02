@@ -1,5 +1,13 @@
 import Image from 'next/image';
-import Link from 'next/link';
+
+// import components
+import Nav from '../components/Nav';
+import NavMobile from '../components/NavMobile';
+
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { btnAnim } from '../variants';
 
 const Header = ({ headerData, navData }) => {
   // destructure header data
@@ -7,26 +15,23 @@ const Header = ({ headerData, navData }) => {
   return (
     <header className='py-[40px] fixed w-full max-w-[1120px] z-20 flex justify-between items-center'>
       <Image src={logoImg} width={212} height={50} />
-      {/* nav & button wrapper */}
-      <div className='flex gap-x-[96px] items-center'>
+      {/* nav & button wrapper - initially hidden */}
+      <div className='hidden lg:flex gap-x-[96px]'>
         {/* nav */}
-        <nav>
-          <ul className='flex gap-[96px]'>
-            {navData.map((item, idx) => {
-              // destructure item
-              const { name, href } = item;
-              return (
-                <li key={idx}>
-                  <Link href={href}>
-                    <a className='text-white'>{name}</a>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+        <Nav navData={navData} />
         {/* btn */}
-        <button className='btn'>{btnText}</button>
+        <motion.button
+          variants={btnAnim}
+          initial='initial'
+          whileHover='hover'
+          className='btn'
+        >
+          {btnText}
+        </motion.button>
+      </div>
+      {/* nav mobile - hide on large screens */}
+      <div className='lg:hidden'>
+        <NavMobile navData={navData} />
       </div>
     </header>
   );

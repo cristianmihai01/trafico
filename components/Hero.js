@@ -43,6 +43,9 @@ const Hero = ({ headerData, heroData, navData }) => {
 
         {/* button */}
         <motion.button
+          whileHover={{
+            scale: 1.1,
+          }}
           variants={fadeInDown}
           className='btn flex items-center gap-6'
         >
@@ -50,14 +53,17 @@ const Hero = ({ headerData, heroData, navData }) => {
         </motion.button>
 
         {/* girl image */}
-        <motion.div variants={girlAnim} className='absolute bottom-0'>
+        <motion.div
+          variants={girlAnim}
+          className='hidden lg:flex absolute bottom-0'
+        >
           <Image src={girlImg} width={206} height={495} />
         </motion.div>
 
         {/* truck image */}
         <motion.div
           variants={truckAnim}
-          className='absolute -bottom-[25%] -left-[30%]'
+          className='hidden lg:flex absolute -bottom-[25%] -left-[30%]'
         >
           <Image src={truckImg} width={811} height={395} />
         </motion.div>
@@ -65,7 +71,7 @@ const Hero = ({ headerData, heroData, navData }) => {
         {/* boy image */}
         <motion.div
           variants={boyAnim}
-          className='absolute right-[380px] bottom-0 z-10'
+          className='hidden lg:flex absolute right-[380px] bottom-0 z-10'
         >
           <Image src={boyImg} width={206} height={495} />
         </motion.div>

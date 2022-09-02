@@ -1,21 +1,3 @@
-/* export const fadeIn = (direction) => {
-  return {
-    initial: {
-      y: direction === 'up' ? 80 : -120,
-      opacity: 0,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-  };
-};
-*/
-
 export const staggerContainer = {
   initial: {},
   animate: {
@@ -61,5 +43,21 @@ export const fadeInDown = {
     y: 0,
     opacity: 1,
     transition: { type: 'tween', duration: 1 },
+  },
+};
+
+export const btnAnim = {
+  initial: {
+    scale: 1,
+    backgroundColor: '#EE4D47',
+  },
+  hover: {
+    backgroundColor: '#DA423D',
+    scale: 1.05,
+    transition: {
+      // ease: [0.075, 0.82, 0.165, 1],
+      type: 'spring',
+      duration: 0.3,
+    },
   },
 };
