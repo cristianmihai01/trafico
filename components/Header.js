@@ -23,7 +23,7 @@ const Header = ({ headerData, navData }) => {
     <header
       className={`${
         header ? 'bg-white px-3 py-3 rounded-md shadow-primary' : 'py-[40px]'
-      } fixed w-full max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
+      } fixed w-full max-w-[90vw] lg:max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
     >
       {/* logo v1 */}
       <Link href={'/'}>
