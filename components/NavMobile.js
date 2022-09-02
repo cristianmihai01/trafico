@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 const NavMobile = ({ navData }) => {
   return (
-    <nav className='bg-slate-800 h-screen absolute right-0 top-0 hidden'>
-      <ul className='flex flex-col'>
+    <nav className='bg-green-400 w-full p-4'>
+      {/* nav list */}
+      <ul className='flex flex-col gap-y-6'>
         {navData.map((item, idx) => {
           // destructure item
           const { name, href } = item;

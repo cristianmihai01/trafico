@@ -6,6 +6,9 @@ import Link from 'next/link';
 import Nav from '../components/Nav';
 import NavMobile from '../components/NavMobile';
 
+// import react icons
+import { HiMenu } from 'react-icons/hi';
+
 const Header = ({ headerData, navData }) => {
   const [header, setHeader] = useState(false);
   // destructure header data
@@ -23,7 +26,7 @@ const Header = ({ headerData, navData }) => {
     <header
       className={`${
         header ? 'bg-white px-3 py-3 rounded-md shadow-primary' : 'py-[40px]'
-      } fixed w-full max-w-[90vw] lg:max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
+      } fixed w-full left-0 right-0 mx-auto max-w-[90vw] lg:max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
     >
       {/* logo v1 */}
       <Link href={'/'}>
@@ -42,8 +45,14 @@ const Header = ({ headerData, navData }) => {
         {/* btn */}
         <button className='btn'>{btnText}</button>
       </div>
-      {/* nav mobile - hide on large screens */}
+
+      {/* nav menu btn- hide on large screens */}
       <div className='lg:hidden'>
+        <HiMenu className='text-4xl' />
+      </div>
+
+      {/* nav mobile - hide on large screens */}
+      <div className='lg:hidden absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden'>
         <NavMobile navData={navData} />
       </div>
     </header>
