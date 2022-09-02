@@ -1,7 +1,8 @@
 
 {
   "headerData": {
-    "logoImg": "/images/header/logo.svg",
+    "logoImgV1": "/images/header/logoV1.svg",
+    "logoImgV2": "/images/header/logoV2.svg",
     "btnText": "Contact us"
   },
 

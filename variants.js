@@ -45,13 +45,3 @@ export const fadeInDown = {
     transition: { type: 'tween', duration: 1 },
   },
 };
-
-export const linkHover = {
-  initial: {
-    color: '#fff',
-  },
-  hover: {
-    color: '#DA423D',
-    type: 'tween',
-  },
-};
