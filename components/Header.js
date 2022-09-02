@@ -11,6 +11,7 @@ import { HiMenu } from 'react-icons/hi';
 
 const Header = ({ headerData, navData }) => {
   const [header, setHeader] = useState(false);
+  const [navMobile, setNavMobile] = useState(false);
   // destructure header data
   const { logoImgV1, logoImgV2, btnText } = headerData;
 
@@ -47,12 +48,19 @@ const Header = ({ headerData, navData }) => {
       </div>
 
       {/* nav menu btn- hide on large screens */}
-      <div className='lg:hidden'>
-        <HiMenu className='text-4xl' />
+      <div
+        onClick={() => setNavMobile(!navMobile)}
+        className='lg:hidden cursor-pointer'
+      >
+        <HiMenu className='text-4xl text-accent-hover' />
       </div>
 
       {/* nav mobile - hide on large screens */}
-      <div className='lg:hidden absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden'>
+      <div
+        className={`${
+          navMobile ? 'max-h-[154px]' : 'max-h-0'
+        } lg:hidden absolute top-full mt-2 w-full left-0 rounded-md overflow-hidden transition-all`}
+      >
         <NavMobile navData={navData} />
       </div>
     </header>
