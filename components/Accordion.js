@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+// import icons
+import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi';
+// import motion
+import { motion } from 'framer-motion';
+
 const Accordion = ({ accordion }) => {
   const [isOpen, setIsOpen] = useState(false);
   // destructure accordion
@@ -10,10 +15,21 @@ const Accordion = ({ accordion }) => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className='shadow-primary bg-white cursor-pointer'
+        className='shadow-primary bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center'
       >
-        <div className='py-4 px-8 rounded-[10px]'>
-          <div className='lead font-medium'>{title}</div>
+        <div className='w-full flex justify-between items-center'>
+          <p className='lead font-medium leading-snug max-w-[400px]'>{title}</p>
+          <div className='transition-all duration-500'>
+            {isOpen ? (
+              <motion.div initial='initial' animate={{ rotate: 180 }}>
+                <HiOutlineMinus className='text-[28px] text-accent' />
+              </motion.div>
+            ) : (
+              <motion.div initial='initial' animate={{ rotate: 0 }}>
+                <HiOutlinePlus className='text-[28px] text-accent' />
+              </motion.div>
+            )}
+          </div>
         </div>
       </div>
       <div
