@@ -22,7 +22,7 @@ const Faq = ({ faqData }) => {
           </div>
         </div>
         {/* accordions list */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-[10px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] gap-y-[10px]'>
           {accordions.map((accordion, idx) => {
             return <Accordion accordion={accordion} key={idx} />;
           })}
