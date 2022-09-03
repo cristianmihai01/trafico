@@ -7,7 +7,7 @@ const Faq = ({ faqData }) => {
   // destructure faq data
   const { pretitle, title, boyImg, accordions } = faqData;
   return (
-    <section className='min-h-[1150px] lg:bg-faq bg-no-repeat bg-right-top py-6 lg:pt-40 lg:pb-24'>
+    <section className='min-h-[1150px] lg:bg-faq bg-no-repeat bg-right-top lg:pt-40 lg:pb-24'>
       <div className='container mx-auto'>
         {/* top */}
         <div className='flex flex-col lg:flex-row justify-center lg:justify-start items-center relative pt-8 pb-16 lg:pt-16 lg:pb-32'>
