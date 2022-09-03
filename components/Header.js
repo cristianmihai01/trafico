@@ -26,7 +26,9 @@ const Header = ({ headerData, navData }) => {
   return (
     <header
       className={`${
-        header ? 'bg-white px-3 py-3 rounded-md shadow-primary' : 'py-[40px]'
+        header
+          ? 'bg-white px-3 py-3 rounded-md drop-shadow-primary'
+          : 'py-[40px]'
       } fixed w-full left-0 right-0 mx-auto max-w-[90vw] lg:max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
     >
       {/* logo v1 */}

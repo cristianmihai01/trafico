@@ -15,7 +15,7 @@ const Accordion = ({ accordion }) => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className='shadow-primary bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center'
+        className='drop-shadow-primary  bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center'
       >
         <div className='w-full flex justify-between items-center'>
           <p className='lead font-medium leading-snug max-w-[400px]'>{title}</p>
