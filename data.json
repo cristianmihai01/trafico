@@ -26,52 +26,52 @@
     "boyImg": "/images/faq/boy.svg",
     "accordions": [
       {
-        "title": "What is a professional traffic permit?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "What is a professional traffic permit?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "How to check the traffic condition?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "How to check the traffic condition?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       },
       {
-        "title": "What are the requirements for a professional traffic permit?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "What are the requirements for a professional traffic permit?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "Are there professional traffic permit training courses at a distance?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "Are there professional traffic permit training courses at a distance?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       },
       {
-        "title": "When is a professional traffic permit needed?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "When is a professional traffic permit needed?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "Where to look for a traffic permit?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "Where to look for a traffic permit?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       },
       {
-        "title": "Are there differences between a traffic permit and a professional traffic permit?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "Are there differences between a traffic permit and a professional traffic permit?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "How much does a commercial traffic permit cost for goods?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "How much does a commercial traffic permit cost for goods?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       },
       {
-        "title": "How to plug in for the traffic permit test?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "How to plug in for the traffic permit test?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "How is the sample for a professional traffic permit booked?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "How is the sample for a professional traffic permit booked?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       },
       {
-        "title": "What is a professional traffic permit?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
+        "question": "What is a professional traffic permit?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?"
       },
       {
-        "title": "How to check the traffic condition?",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
+        "question": "How to check the traffic condition?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum."
       }
     ]
   }

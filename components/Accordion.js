@@ -8,17 +8,21 @@ import { motion } from 'framer-motion';
 const Accordion = ({ accordion }) => {
   const [isOpen, setIsOpen] = useState(false);
   // destructure accordion
-  const { title, subtitle } = accordion;
+  const { question, answer } = accordion;
   return (
     <div className='max-w-[550px]'>
       <div
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className='drop-shadow-primary  bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center'
+        className='drop-shadow-primary bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center'
       >
         <div className='w-full flex justify-between items-center'>
-          <p className='lead font-medium leading-snug max-w-[400px]'>{title}</p>
+          {/* title */}
+          <p className='lead font-medium leading-snug max-w-[400px]'>
+            {question}
+          </p>
+          {/* icons */}
           <div className='transition-all duration-500'>
             {isOpen ? (
               <motion.div initial='initial' animate={{ rotate: 180 }}>
@@ -34,10 +38,12 @@ const Accordion = ({ accordion }) => {
       </div>
       <div
         className={`${
-          isOpen ? 'max-h-[160px] p-8 bg-red-100' : 'max-h-0'
+          isOpen
+            ? 'max-h-[160px] p-8 bg-[#FFF7F5] rounded-[10px] drop-shadow-primary my-2'
+            : 'max-h-0'
         } h-[160px] overflow-hidden transition-all`}
       >
-        <p>{subtitle}</p>
+        <p className='lead leading-[30px] mt-2'>{answer}</p>
       </div>
     </div>
   );
