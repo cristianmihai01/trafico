@@ -3,9 +3,9 @@ import { useState } from 'react';
 const Accordion = ({ accordion }) => {
   const [isOpen, setIsOpen] = useState(false);
   // destructure accordion
-  const { id, title, subtitle } = accordion;
+  const { title, subtitle } = accordion;
   return (
-    <div className='max-w-[550px] mb-8'>
+    <div className='max-w-[550px]'>
       <div
         onClick={() => {
           setIsOpen(!isOpen);

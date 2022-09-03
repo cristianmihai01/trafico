@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-body font-normal text-base bg-slate-200;
+    @apply font-body font-normal text-base text-primary bg-slate-200;
   }
   a {
     @apply font-body text-base uppercase font-medium tracking-[5%];
@@ -21,7 +21,7 @@
     @apply text-[68px] lg:text-[100px] leading-none;
   }
   .h2 {
-    @apply text-[48px] leading-[140%];
+    @apply text-[36px] lg:text-[48px] leading-[140%];
   }
   .h3 {
     @apply font-body text-[24px] font-bold leading-[40px] uppercase tracking-[10%] text-accent;
