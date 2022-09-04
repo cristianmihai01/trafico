@@ -8,6 +8,16 @@ export const staggerContainer = {
   },
 };
 
+export const staggerTextContainer = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
 export const boyAnim = {
   initial: { x: -150, opacity: 0 },
   animate: {
@@ -37,6 +47,18 @@ export const truckAnim = {
 export const fadeInDown = {
   initial: {
     y: -50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'tween', duration: 1 },
+  },
+};
+
+export const fadeInUp = {
+  initial: {
+    y: 60,
     opacity: 0,
   },
   animate: {

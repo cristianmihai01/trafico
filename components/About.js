@@ -1,28 +1,61 @@
 import Image from 'next/image';
 
+// import motion
+import { motion } from 'framer-motion';
+
+// import variants
+import {
+  fadeInUp,
+  fadeInDown,
+  staggerContainer,
+  staggerTextContainer,
+} from '../variants';
+
 const About = ({ aboutData }) => {
   // destructure about data
   const { title, subtitle, text, boyImg } = aboutData;
   return (
     <section className='mb-[60px] lg:mb-[160px]'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-x-[20px]'>
+        <motion.div
+          variants={staggerContainer}
+          initial='initial'
+          whileInView={'animate'}
+          viewport={{ once: false, amount: 0.1 }}
+          className='flex flex-col lg:flex-row gap-x-[20px]'
+        >
           {/* text */}
-          <div className='flex-1 mt-[74px]'>
-            <h3 className='h3 mb-10'>{title}</h3>
-            <p className='lead max-w-[470px] mb-[70px]'>{subtitle}</p>
+          <motion.div
+            variants={staggerTextContainer}
+            initial='initial'
+            whileInView={'animate'}
+            viewport={{ once: false, amount: 0.1 }}
+            className='flex-1 mt-[74px]'
+          >
+            <motion.h3 variants={fadeInDown} className='h3 mb-10'>
+              {title}
+            </motion.h3>
+            <motion.p
+              variants={fadeInDown}
+              className='lead max-w-[470px] mb-[70px]'
+            >
+              {subtitle}
+            </motion.p>
             {/* text box */}
-            <div className='bg-accent/10 border-l-[10px] border-accent max-w-[570px] h-[160px] flex items-center justify-center mb-8 lg:mb-0'>
+            <motion.div
+              variants={fadeInDown}
+              className='bg-accent/10 border-l-[10px] border-accent max-w-[570px] h-[160px] flex items-center justify-center mb-8 lg:mb-0'
+            >
               <p className='text-[20px] leading-normal lg:text-[24px] lg:leading-[32px] font-medium max-w-[320px] lg:max-w-[460px]'>
                 {text}
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           {/* image */}
-          <div className='flex-1'>
+          <motion.div variants={fadeInUp} className='flex-1'>
             <Image src={boyImg} width={575} height={480} />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
