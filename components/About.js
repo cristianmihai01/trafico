@@ -21,7 +21,7 @@ const About = ({ aboutData }) => {
           variants={staggerContainer}
           initial='initial'
           whileInView={'animate'}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: false, amount: 0.4 }}
           className='flex flex-col lg:flex-row gap-x-[20px]'
         >
           {/* text */}
@@ -29,7 +29,7 @@ const About = ({ aboutData }) => {
             variants={staggerTextContainer}
             initial='initial'
             whileInView={'animate'}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.4 }}
             className='flex-1 mt-[74px]'
           >
             <motion.h3 variants={fadeInDown} className='h3 mb-10'>

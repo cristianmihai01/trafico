@@ -18,6 +18,17 @@ export const staggerTextContainer = {
   },
 };
 
+export const staggerAccordionContainer = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren: 0.2,
+      type: 'tween',
+    },
+  },
+};
+
 export const boyAnim = {
   initial: { x: -150, opacity: 0 },
   animate: {
@@ -63,6 +74,30 @@ export const fadeInUp = {
   },
   animate: {
     y: 0,
+    opacity: 1,
+    transition: { type: 'tween', duration: 1 },
+  },
+};
+
+export const fadeInLeft = {
+  initial: {
+    x: 60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: { type: 'tween', duration: 1 },
+  },
+};
+
+export const fadeInRight = {
+  initial: {
+    x: -60,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
     opacity: 1,
     transition: { type: 'tween', duration: 1 },
   },

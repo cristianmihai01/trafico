@@ -4,13 +4,15 @@ import { useState } from 'react';
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi';
 // import motion
 import { motion } from 'framer-motion';
+// import variants
+import { fadeInRight } from '../variants';
 
 const Accordion = ({ accordion }) => {
   const [isOpen, setIsOpen] = useState(false);
   // destructure accordion
   const { question, answer } = accordion;
   return (
-    <div className='max-w-[550px]'>
+    <motion.div variants={fadeInRight} className='max-w-[550px]'>
       <div
         onClick={() => {
           setIsOpen(!isOpen);
@@ -45,7 +47,7 @@ const Accordion = ({ accordion }) => {
       >
         <p className='lead leading-[30px] mt-2'>{answer}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
