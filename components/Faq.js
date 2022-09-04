@@ -13,6 +13,7 @@ import {
   fadeInLeft,
   fadeInRight,
   staggerAccordionContainer,
+  staggerTextContainer,
 } from '../variants';
 
 const Faq = ({ faqData }) => {
@@ -22,29 +23,26 @@ const Faq = ({ faqData }) => {
     <section className='min-h-[1150px] lg:bg-faq bg-no-repeat bg-right-top lg:pt-40 lg:pb-24'>
       <div className='container mx-auto'>
         {/* top */}
-        <div className='flex flex-col lg:flex-row justify-center lg:justify-start items-center relative pt-8 pb-16 lg:pt-16 lg:pb-32'>
+        <motion.div
+          variants={staggerTextContainer}
+          initial='initial'
+          whileInView={'animate'}
+          viewport={{ once: false, amount: 0.4 }}
+          className='flex flex-col lg:flex-row justify-center lg:justify-start items-center relative pt-8 pb-16 lg:pt-16 lg:pb-32'
+        >
           {/* text */}
-          <motion.div
-            variants={fadeInRight}
-            initial='initial'
-            whileInView={'animate'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='lg:w-[45%]'
-          >
+          <motion.div variants={fadeInRight} className='lg:w-[45%]'>
             <h3 className='h3 mb-6 lg:mb-12'>{pretitle}</h3>
             <h2 className='h2 mb-6 lg:mb-12'>{title}</h2>
           </motion.div>
           {/* image */}
           <motion.div
             variants={fadeInLeft}
-            initial='initial'
-            whileInView={'animate'}
-            viewport={{ once: false, amount: 0.7 }}
             className='lg:absolute lg:-right-16 lg:-top-16'
           >
             <Image src={boyImg} width={708} height={498} />
           </motion.div>
-        </div>
+        </motion.div>
         {/* accordions list */}
         <motion.div
           variants={staggerAccordionContainer}
