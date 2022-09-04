@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import How from '../components/How';
 import Faq from '../components/Faq';
+import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 
 // import data
@@ -15,6 +16,7 @@ import {
   faqData,
   aboutData,
   howData,
+  testimonialData,
 } from '../data.json';
 
 const Home = ({
@@ -24,6 +26,7 @@ const Home = ({
   faqData,
   aboutData,
   howData,
+  testimonialData,
 }) => {
   return (
     <div className='overflow-hidden max-w-[1600px] mx-auto bg-page'>
@@ -31,6 +34,7 @@ const Home = ({
       <About aboutData={aboutData} />
       <How howData={howData} />
       <Faq faqData={faqData} />
+      <Testimonials testimonialData={testimonialData} />
       <Footer />
       <div className='h-[3000px]'></div>
     </div>
@@ -47,6 +51,7 @@ export const getStaticProps = async () => {
       faqData,
       aboutData,
       howData,
+      testimonialData,
     },
   };
 };

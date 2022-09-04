@@ -16,7 +16,7 @@ const About = ({ aboutData }) => {
           variants={staggerTextContainer}
           initial='initial'
           whileInView={'animate'}
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.5 }}
           className='flex flex-col lg:flex-row gap-x-[20px]'
         >
           {/* text */}
