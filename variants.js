@@ -57,48 +57,48 @@ export const truckAnim = {
 
 export const fadeInDown = {
   initial: {
-    y: -50,
+    y: -80,
     opacity: 0,
   },
   animate: {
     y: 0,
     opacity: 1,
-    transition: { type: 'tween', duration: 1 },
+    transition: { type: 'tween', duration: 1.2 },
   },
 };
 
 export const fadeInUp = {
   initial: {
-    y: 60,
+    y: 80,
     opacity: 0,
   },
   animate: {
     y: 0,
     opacity: 1,
-    transition: { type: 'tween', duration: 1 },
+    transition: { type: 'tween', duration: 1.2 },
   },
 };
 
 export const fadeInLeft = {
   initial: {
-    x: 60,
+    x: 80,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
-    transition: { type: 'tween', duration: 1 },
+    transition: { type: 'tween', duration: 1.2 },
   },
 };
 
 export const fadeInRight = {
   initial: {
-    x: -60,
+    x: -80,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
-    transition: { type: 'tween', duration: 1 },
+    transition: { type: 'tween', duration: 1.2 },
   },
 };
