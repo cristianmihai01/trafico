@@ -15,7 +15,7 @@ const How = ({ howData }) => {
           variants={staggerTextContainer}
           initial='initial'
           whileInView={'animate'}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.6 }}
           className='flex flex-col lg:flex-row gap-x-10 items-center'
         >
           {/* image */}

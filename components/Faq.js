@@ -25,7 +25,7 @@ const Faq = ({ faqData }) => {
           variants={staggerTextContainer}
           initial='initial'
           whileInView={'animate'}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.6 }}
           className='flex flex-col lg:flex-row justify-center lg:justify-start items-center relative pt-8 pb-16 lg:pt-16 lg:pb-32'
         >
           {/* text */}
