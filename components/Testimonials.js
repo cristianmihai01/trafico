@@ -22,15 +22,15 @@ const Testimonials = ({ testimonialData }) => {
           variants={staggerTextContainer}
           initial='initial'
           whileInView={'animate'}
-          className='flex flex-col gap-y-[40px]'
+          viewport={{ once: false, amount: 0.5 }}
+          className='flex'
         >
           {/* text */}
-          <motion.div variants={fadeInUp}>
+          <motion.div variants={fadeInUp} className='w-[40%]'>
             {/* pretitle */}
             <h3 className='h3 mb-10'>{pretitle}</h3>
-            <div className='w-[40%]'>
-              <h2 className='h2'>{title}</h2>
-            </div>
+            {/* title */}
+            <h2 className='h2'>{title}</h2>
           </motion.div>
           {/* slider */}
           <motion.div variants={fadeInUp} className='w-[60%] absolute right-0'>
