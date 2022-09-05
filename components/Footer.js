@@ -17,12 +17,12 @@ const Footer = ({ footerData }) => {
         initial='initial'
         whileInView={'animate'}
         viewport={{ once: false, amount: 0.2 }}
-        className='container mx-auto'
+        className='container mx-auto pt-32 lg:pt-0'
       >
         {/* truck image */}
         <motion.div
           variants={truckAnim}
-          className='hidden lg:flex  absolute -top-24 -left-[6.8%]'
+          className='hidden lg:flex absolute -top-24 -left-[6.8%]'
         >
           <Image src={truckImg} width={430} height={210} />
         </motion.div>
@@ -32,13 +32,15 @@ const Footer = ({ footerData }) => {
         </motion.div>
 
         {/* text & form */}
-        <div className='flex flex-col lg:flex-row  items-center lg:pr-[95px]'>
+        <div className='flex flex-col lg:flex-row items-center lg:pr-[95px] lg:gap-x-[95px] gap-y-10 lg:gap-y-0'>
           {/* text */}
-          <div className='flex-1 order-2 lg:order-1'>
-            <p>{text}</p>
+          <div className='flex-1 text-white border-l-[10px] border-accent py-4 lg:mt-24'>
+            <p className='max-w-[330px] text-[20px] leading-[30px] ml-[40px]'>
+              {text}
+            </p>
           </div>
           {/* form */}
-          <form className='w-full max-w-[550px] min-h-[440px] bg-white flex-1 rounded-[10px] order-1 lg:order-2 flex flex-col px-[75px] py-[52px]  space-y-[40px] drop-shadow-primary'>
+          <form className='w-full max-w-[550px] min-h-[440px] bg-white flex-1 rounded-[10px] lg:order-2 flex flex-col px-[75px] py-[52px] space-y-[40px] drop-shadow-primary'>
             {/* name input */}
             <div className='flex flex-col'>
               <label className='font-light mb-[10px]' htmlFor='name'>
