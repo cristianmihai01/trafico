@@ -11,7 +11,7 @@ import {
   staggerContainer,
   girlAnim,
   boyAnim,
-  truckAnim,
+  heroTruckAnim,
   fadeInDown,
   fadeInRight,
 } from '../variants';
@@ -65,7 +65,7 @@ const Hero = ({ headerData, heroData, navData }) => {
 
         {/* truck image */}
         <motion.div
-          variants={truckAnim}
+          variants={heroTruckAnim}
           className='hidden lg:flex absolute -bottom-[25%] -left-[30%]'
         >
           <Image src={truckImg} width={811} height={395} />

@@ -3,7 +3,7 @@ import Image from 'next/image';
 // import motion
 import { motion } from 'framer-motion';
 // import variants
-import { staggerFooterContainer, truckAnim } from '../variants';
+import { fadeInUp, footerTruckAnim, staggerFooterContainer } from '../variants';
 // import icons
 import { CgArrowLongRight } from 'react-icons/cg';
 
@@ -11,17 +11,17 @@ const Footer = ({ footerData }) => {
   // destructure footer data
   const { truckImg, hillImg, text, logo, links, form } = footerData;
   return (
-    <footer className='bg-footer min-h-[737px] bg-no-repeat bg-left-bottom relative'>
+    <footer className='bg-darkblue lg:bg-transparent lg:bg-footer lg:bg-no-repeat lg:bg-left-bottom relative lg:min-h-[738px]'>
       <motion.div
         variants={staggerFooterContainer}
         initial='initial'
         whileInView={'animate'}
-        viewport={{ once: false, amount: 0.2 }}
-        className='container mx-auto pt-32 lg:pt-0'
+        viewport={{ once: false, amount: 0.1 }}
+        className='container mx-auto lg:min-h-[738px] flex flex-col justify-between'
       >
         {/* truck image */}
         <motion.div
-          variants={truckAnim}
+          variants={footerTruckAnim}
           className='hidden lg:flex absolute -top-24 -left-[6.8%]'
         >
           <Image src={truckImg} width={430} height={210} />
@@ -32,7 +32,10 @@ const Footer = ({ footerData }) => {
         </motion.div>
 
         {/* text & form */}
-        <div className='flex flex-col lg:flex-row items-center lg:pr-[95px] lg:gap-x-[95px] gap-y-10 lg:gap-y-0'>
+        <motion.div
+          variants={fadeInUp}
+          className='flex flex-col lg:flex-row items-center lg:pr-[95px] lg:gap-x-[95px] gap-y-10 lg:gap-y-0'
+        >
           {/* text */}
           <div className='flex-1 text-white border-l-[10px] border-accent py-4 lg:mt-24'>
             <p className='max-w-[330px] text-[20px] leading-[30px] ml-[40px]'>
@@ -70,6 +73,13 @@ const Footer = ({ footerData }) => {
               <CgArrowLongRight className='text-[30px]' />
             </button>
           </form>
+        </motion.div>
+        {/* logo & links */}
+        <div className='bg-accent/20 py-[120px] flex justify-between'>
+          <div>
+            <Image src={logo} width={170} height={41} />
+          </div>
+          <div>links</div>
         </div>
       </motion.div>
     </footer>

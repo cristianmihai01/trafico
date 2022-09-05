@@ -33,7 +33,7 @@ export const staggerFooterContainer = {
   initial: {},
   animate: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.6,
       delayChildren: 0.3,
     },
   },
@@ -57,11 +57,19 @@ export const girlAnim = {
   },
 };
 
-export const truckAnim = {
+export const heroTruckAnim = {
   initial: { x: -700 },
   animate: {
     x: 0,
     transition: { type: 'spring', duration: 3 },
+  },
+};
+
+export const footerTruckAnim = {
+  initial: { x: -700 },
+  animate: {
+    x: 0,
+    transition: { type: 'spring', duration: 2 },
   },
 };
 
