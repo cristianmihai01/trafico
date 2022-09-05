@@ -1,18 +1,34 @@
 import Image from 'next/image';
 
+// import motion
+import { motion } from 'framer-motion';
+// import variants
+import { staggerFooterContainer, truckAnim } from '../variants';
+
 const Footer = ({ footerData }) => {
   // destructure footer data
   const { truckImg, hillImg, text, logo, links, form } = footerData;
   return (
     <footer className='bg-footer min-h-[737px] bg-no-repeat bg-left-bottom relative'>
-      {/* truck image */}
-      <div className='absolute -top-24  -left-[7%]'>
-        <Image src={truckImg} width={430} height={210} />
-      </div>
-      {/* hill image */}
-      <div className='absolute z-10 top-6'>
-        <Image src={hillImg} width={137} height={92} />
-      </div>
+      <motion.div
+        variants={staggerFooterContainer}
+        initial='initial'
+        whileInView={'animate'}
+        viewport={{ once: false, amount: 0.2 }}
+        className='container mx-auto'
+      >
+        {/* truck image */}
+        <motion.div
+          variants={truckAnim}
+          className='absolute -top-24 -left-[6.8%]'
+        >
+          <Image src={truckImg} width={430} height={210} />
+        </motion.div>
+        {/* hill image */}
+        <motion.div className='absolute z-10 top-[22px] left-0'>
+          <Image src={hillImg} width={137} height={92} />
+        </motion.div>
+      </motion.div>
     </footer>
   );
 };
