@@ -5,6 +5,7 @@ import How from '../components/How';
 import Faq from '../components/Faq';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
+import Copyright from '../components/Copyright';
 
 // import data
 import {
@@ -36,7 +37,7 @@ const Home = ({
       <Faq faqData={faqData} />
       <Testimonials testimonialData={testimonialData} />
       <Footer footerData={footerData} />
-      <div className='h-[3000px]'></div>
+      <Copyright />
     </div>
   );
 };
