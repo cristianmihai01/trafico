@@ -13,7 +13,6 @@ import {
   boyAnim,
   heroTruckAnim,
   fadeInDown,
-  fadeInRight,
 } from '../variants';
 
 // import icons

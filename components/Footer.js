@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 // import motion
 import { motion } from 'framer-motion';
@@ -11,7 +12,7 @@ const Footer = ({ footerData }) => {
   // destructure footer data
   const { truckImg, hillImg, text, logo, links, form } = footerData;
   return (
-    <footer className='bg-darkblue lg:bg-transparent lg:bg-footer lg:bg-no-repeat lg:bg-left-bottom relative lg:min-h-[738px]'>
+    <footer className='bg-darkblue lg:bg-transparent lg:bg-footer lg:bg-no-repeat lg:bg-left-bottom relative lg:min-h-[738px] pt-12 lg:pt-0'>
       <motion.div
         variants={staggerFooterContainer}
         initial='initial'
@@ -75,12 +76,32 @@ const Footer = ({ footerData }) => {
           </form>
         </motion.div>
         {/* logo & links */}
-        <div className='bg-accent/20 py-[120px] flex justify-between'>
-          <div>
-            <Image src={logo} width={170} height={41} />
+        <motion.div
+          variants={fadeInUp}
+          className='py-[120px] flex flex-col lg:flex-row justify-between lg:pr-24'
+        >
+          {/* logo */}
+          <div className='mb-6 mx-auto lg:mb-0 lg:mx-0'>
+            <Link href={'/'}>
+              <a>
+                <Image src={logo} width={170} height={41} />
+              </a>
+            </Link>
           </div>
-          <div>links</div>
-        </div>
+          {/* links */}
+          <ul className='flex flex-col items-center lg:flex-row gap-y-4 lg:gap-y-0 gap-x-[100px] text-center'>
+            {links.map((item, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className='text-white font-light  hover:text-accent transition'
+                >
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </motion.div>
       </motion.div>
     </footer>
   );
