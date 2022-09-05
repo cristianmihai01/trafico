@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 // import components
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -17,6 +15,7 @@ import {
   aboutData,
   howData,
   testimonialData,
+  footerData,
 } from '../data.json';
 
 const Home = ({
@@ -27,6 +26,7 @@ const Home = ({
   aboutData,
   howData,
   testimonialData,
+  footerData,
 }) => {
   return (
     <div className='overflow-hidden max-w-[1600px] mx-auto bg-page'>
@@ -35,7 +35,7 @@ const Home = ({
       <How howData={howData} />
       <Faq faqData={faqData} />
       <Testimonials testimonialData={testimonialData} />
-      <Footer />
+      <Footer footerData={footerData} />
       <div className='h-[3000px]'></div>
     </div>
   );
@@ -52,6 +52,7 @@ export const getStaticProps = async () => {
       aboutData,
       howData,
       testimonialData,
+      footerData,
     },
   };
 };

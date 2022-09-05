@@ -39,6 +39,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/images/hero/scene.svg')",
         faq: "url('/images/faq/bg.svg')",
+        footer: "url('/images/footer/bg.svg')",
       },
     },
   },
