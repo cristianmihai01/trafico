@@ -25,7 +25,7 @@ const How = ({ howData }) => {
           {/* text */}
           <motion.div variants={fadeInLeft} className='flex-1 flex justify-end'>
             <div className='max-w-[455px]'>
-              <h3 className='h3 mb-10'>{title}</h3>
+              <h3 className='h3'>{title}</h3>
               <p className='lead'>{subtitle}</p>
             </div>
           </motion.div>

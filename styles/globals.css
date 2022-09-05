@@ -24,7 +24,7 @@
     @apply text-[36px] lg:text-[48px] leading-[140%];
   }
   .h3 {
-    @apply font-body text-[24px] font-bold leading-[40px] uppercase tracking-[10%] text-accent;
+    @apply font-body text-[24px] font-bold leading-[40px] uppercase tracking-[10%] text-accent mb-4 lg:mb-10;
   }
   .lead {
     @apply font-body font-light text-[18px] leading-[40px];

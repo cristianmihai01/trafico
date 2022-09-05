@@ -23,17 +23,20 @@ const Testimonials = ({ testimonialData }) => {
           initial='initial'
           whileInView={'animate'}
           viewport={{ once: false, amount: 0.6 }}
-          className='flex'
+          className='flex flex-col lg:flex-row'
         >
           {/* text */}
-          <motion.div variants={fadeInUp} className='w-[40%]'>
+          <motion.div variants={fadeInUp} className='lg:w-[40%]'>
             {/* pretitle */}
-            <h3 className='h3 mb-10'>{pretitle}</h3>
+            <h3 className='h3'>{pretitle}</h3>
             {/* title */}
-            <h2 className='h2'>{title}</h2>
+            <h2 className='h2 mb-6'>{title}</h2>
           </motion.div>
           {/* slider */}
-          <motion.div variants={fadeInUp} className='w-[60%] absolute right-0'>
+          <motion.div
+            variants={fadeInUp}
+            className='lg:w-[60%] lg:absolute lg:right-0'
+          >
             <Slider clients={clients} />
           </motion.div>
         </motion.div>

@@ -30,7 +30,7 @@ const Faq = ({ faqData }) => {
         >
           {/* text */}
           <motion.div variants={fadeInRight} className='lg:w-[45%]'>
-            <h3 className='h3 mb-6 lg:mb-12'>{pretitle}</h3>
+            <h3 className='h3'>{pretitle}</h3>
             <h2 className='h2 mb-6 lg:mb-12'>{title}</h2>
           </motion.div>
           {/* image */}

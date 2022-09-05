@@ -28,6 +28,15 @@ const Footer = ({ footerData }) => {
         <motion.div className='absolute z-10 top-[22px] left-0'>
           <Image src={hillImg} width={137} height={92} />
         </motion.div>
+        {/* text & form */}
+        <div className='flex items-center'>
+          {/* text */}
+          <div className='flex-1'>
+            <p>{text}</p>
+          </div>
+          {/* form */}
+          <form className='w-[550px] h-[440px] bg-white flex-1'>form</form>
+        </div>
       </motion.div>
     </footer>
   );

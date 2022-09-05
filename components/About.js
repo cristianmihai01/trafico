@@ -21,7 +21,7 @@ const About = ({ aboutData }) => {
         >
           {/* text */}
           <motion.div variants={fadeInDown} className='flex-1 mt-[74px]'>
-            <h3 className='h3 mb-10'>{title}</h3>
+            <h3 className='h3'>{title}</h3>
             <p className='lead max-w-[470px] mb-[70px]'>{subtitle}</p>
             {/* text box */}
             <div className='bg-accent/10 border-l-[10px] border-accent max-w-[570px] h-[160px] flex items-center justify-center mb-8 lg:mb-0'>
