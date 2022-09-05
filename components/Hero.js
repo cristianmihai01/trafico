@@ -50,7 +50,7 @@ const Hero = ({ headerData, heroData, navData }) => {
             scale: 1.05,
           }}
           variants={fadeInDown}
-          className='btn flex items-center gap-6'
+          className='btn'
         >
           {btnText} <CgArrowLongRight className='text-[30px]' />
         </motion.button>
