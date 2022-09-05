@@ -13,7 +13,7 @@ const Nav = ({ navData, header }) => {
                 <a
                   className={`${
                     header ? 'text-primary' : 'text-white'
-                  } cursor-pointer hover:text-accent-hover`}
+                  } cursor-pointer hover:text-accent-hover transition`}
                 >
                   {name}
                 </a>
