@@ -44,7 +44,7 @@ const Footer = ({ footerData }) => {
             </p>
           </div>
           {/* form */}
-          <form className='w-full max-w-[550px] min-h-[440px] bg-white flex-1 rounded-[10px] lg:order-2 flex flex-col px-[75px] py-[52px] space-y-[40px] drop-shadow-primary'>
+          <form className='w-full max-w-[550px] bg-white flex-1 rounded-[10px] lg:order-2 flex flex-col px-[35px] lg:px-[75px] py-[25px] lg:py-[52px] space-y-[40px] drop-shadow-primary'>
             {/* name input */}
             <div className='flex flex-col'>
               <label className='font-light mb-[10px]' htmlFor='name'>
@@ -69,7 +69,7 @@ const Footer = ({ footerData }) => {
                 placeholder={form.placeholderEmail}
               />
             </div>
-            <button className='btn self-start'>
+            <button className='btn self-start hover:bg-accent-hover transition'>
               {form.btnText}
               <CgArrowLongRight className='text-[30px]' />
             </button>
@@ -94,7 +94,7 @@ const Footer = ({ footerData }) => {
               return (
                 <li
                   key={idx}
-                  className='text-white font-light  hover:text-accent transition'
+                  className='text-white font-light hover:text-accent transition'
                 >
                   <Link href={item.href}>{item.name}</Link>
                 </li>
